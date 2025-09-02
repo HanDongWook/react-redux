@@ -2,9 +2,9 @@ import { useState } from "react";
 import { connect } from "react-redux";
 import { add } from "../store"
 import ToDo from "../components/ToDo";
+import "./Home.css"; 
 
 function Home({ toDos, addToDo }) {
-    console.log(toDos);
     const [text, setText] = useState("");
     function onChange(e) {
         setText(e.target.value);
